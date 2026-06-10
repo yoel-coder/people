@@ -24,8 +24,8 @@ class Peopledisplay extends React.Component {
                 </tr>
             </thead>
             <tbody>
-                {this.props.people.map((person, idx) => (
-                    <tr key={idx} className={this.className(person.age)}>
+                {this.props.people.map((person) => (
+                    <tr className={this.className(person.age)}>
                         <td>{person.firstName}</td>
                         <td>{person.lastName}</td>
                         <td>{person.age}</td>
